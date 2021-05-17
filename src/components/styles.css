@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+  margin: 0;
+}
+body {
+  font-size: 0.9rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+ul{
+ padding-left: 0;
+}
+
+.site-title {
+  width: 50px;
+  text-align: left;
+}
+.site-title a {
+  display: block;
+}
+
+.serch-title {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  border-bottom: solid 1px #383e45;
+}
+
+.wrapper {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+} 
+
+
+/*-------------------------------------------
+パンくず
+-------------------------------------------*/
+
+.breadcrumbs li{
+  content: '/';
+  display: inline-block;
+  padding: 0 5px; 
+}
+
+  @media screen and (max-width:768px) {
+  .breadcrumbs {
+  padding:0 20px;
+  }
+  }
+
+
+
+/*-------------------------------------------
+MV
+-------------------------------------------*/
+.mv img {
+  width: 100%;
+  max-width: 1920px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.mv {
+  margin-bottom: 80px;
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px 0 30px;
+  height: 60px;
+}
+
+#header ul {
+  display: flex;
+  padding-bottom: 10px;
+  margin: 0;
+}
+#header li {
+  margin-left: 30px;
+}
+
+#header li a {
+  color: #24292e;
+  font-size: 18px;
+}
+
+#header li a:hover {
+  opacity: 0.7;
+}
+
+/*-------------------------------------------
+Serch
+-------------------------------------------*/
+#about img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-top:40px;
+}
+
+#serch .content{
+  justify-content: center;
+  display:flex;
+}
+
+.text {
+  text-align: left;
+  line-height: 1.8;
+}
+
+
+/*-------------------------------------------
+Songs
+-------------------------------------------*/
+#songs ul{
+  display:flex;
+  justify-content: space-between;
+}
+
+#songs li{
+  width: 25%;
+}
+
+/*-------------------------------------------
+Artist
+-------------------------------------------*/
+#artist ul{
+  display:flex;
+  justify-content: space-between;
+}
+
+#artist li{
+  width: 30%;
+}
+
+.sns-icon {
+margin-bottom: 100px;
+}
+
+.icon{
+  width: 20%;
+  padding-right:10px;
+}
+
+.icon2{
+  width: 20%;
+  padding-bottom:5px;
+  padding-left:10px;
+}
+
+
+/*-------------------------------------------
+Photos
+-------------------------------------------*/
+
+#photos ul{
+  display:flex;
+  justify-content: space-between;
+}
+
+#photos li{
+  width: 32%;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+
+#footer {
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+/*-------------------------------------------
+button
+-------------------------------------------*/
+
+.buttons-coll {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.custom-btn {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-1 {
+  border: none;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+}
+.btn-1:before,
+.btn-1:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-1:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-1:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-1:hover:before {
+  height: 100%;
+}
+.btn-1:hover:after {
+  width: 100%;
+}
+.btn-1:active {
+  top: 2px;
+}
+
+a {
+  color:#000;
+}
+
+/*-------------------------------------------
+serch button
+-------------------------------------------*/
+.search_container{
+  margin-top: 60px;
+  margin-bottom: 40px;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 10px;
+  height: 2.5em;
+  width: 300px;
+  overflow: hidden;
+  background: #DDDDDD;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.0em;
+  background: #DDDDDD;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.8em;
+  border: none;
+  background: none;
+  color: #555555;
+  position: absolute;
+  height: 2.5em;
+  right: 8px;
+  top: -14px;
+  outline : none;
+}
+.search_container ::-webkit-input-placeholder {
+  color: #555555;
+}
+
+
+/*-------------------------------------------
+Lyrics
+-------------------------------------------*/
+
+.box {
+  display: flex;
+  padding:70px;
+}
+.box .img {
+  margin: 0 20px 0 0;
+}
+.box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.box:nth-child(even) .img {
+  margin: 0 0 0 20px;
+}
+
+.text-box{
+  width:calc(100% - 320px);
+}
+
+/* unrelated css */
+
+.lyrics-img {
+  width:300px;
+  height:200px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
