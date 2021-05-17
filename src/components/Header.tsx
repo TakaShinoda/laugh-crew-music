@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import logo from '../img/logo.png'
-import './styles.css';
+import { Link } from 'react-router-dom'
+import './styles.css'
 
 export const Header: FC = () => {
   return (
@@ -14,19 +15,19 @@ export const Header: FC = () => {
         <nav>
           <ul>
             <li>
-              <a href="index.html">Top</a>
+              <Link to="/">Top</Link>
             </li>
             <li>
-              <a href="playlist.html">Playlist</a>
+              <Link to="/Playlist">Playlist</Link>
             </li>
             <li>
-              <a href="artist.html">Artist</a>
+              <Link to="/Artist">Artist</Link>
             </li>
             <li>
-              <a href="lyrics.html">Lyrics</a>
+              <Link to="/Lyrics">Lyrics</Link>
             </li>
             <li>
-              <a href="photos.html">Photos</a>
+              <Link to="/Photos">Photos</Link>
             </li>
           </ul>
         </nav>
