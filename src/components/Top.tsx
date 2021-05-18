@@ -22,16 +22,12 @@ export const Top: FC = () => {
   }, [])
 
   const inputKeyword = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value)
     let keyword = e.target.value
-    console.log(keyword)
     if (keyword) {
       music.api
         .search(keyword, { limit: 30, types: 'artists,songs' })
         .then((datas: any) => {
-          console.log(datas)
           setResults(datas.songs.data)
-          console.log(datas.songs.data)
           setFlag(true)
         })
     } else {
@@ -46,10 +42,16 @@ export const Top: FC = () => {
     })
   }
 
+  const playTuneOfTheDay = (id: string) => {
+    console.log(id)
+    music.setQueue({ song: id }).then(() => {
+      music.play()
+    })
+  }
+
   const pause = () => {
     console.log('pause')
     music.stop()
-    // music.player.stop()
   }
 
   const tableView = () => {
@@ -90,12 +92,20 @@ export const Top: FC = () => {
         <h2 className="section-title">Tune of the Day</h2>
         <ul>
           <li>
-            <img src={lilac} alt="lilacのジャケット写真" />
+            <img
+              src={lilac}
+              alt="lilacのジャケット写真"
+              onClick={() => playTuneOfTheDay('1560113134')}
+            />
             <h3 className="content-title">Lilac</h3>
             <p>IU</p>
           </li>
           <li>
-            <img src={ontheground} alt="on the groundのジャケット写真" />
+            <img
+              src={ontheground}
+              alt="on the groundのジャケット写真"
+              onClick={() => playTuneOfTheDay('1557617002')}
+            />
             <h3 className="content-title">On The Ground</h3>
             <p>R</p>
           </li>
@@ -103,6 +113,7 @@ export const Top: FC = () => {
             <img
               src={whatdoicallyou}
               alt="what do i call youのジャケット写真"
+              onClick={() => playTuneOfTheDay('1543866180')}
             />
             <h3 className="content-title">What Do I Call You</h3>
             <p>Taeyen</p>
