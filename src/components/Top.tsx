@@ -36,21 +36,18 @@ export const Top: FC = () => {
   }
 
   const play = (id: string) => {
-    console.log(id)
     music.setQueue({ song: id }).then(() => {
       music.play()
     })
   }
 
   const playTuneOfTheDay = (id: string) => {
-    console.log(id)
     music.setQueue({ song: id }).then(() => {
       music.play()
     })
   }
 
   const pause = () => {
-    console.log('pause')
     music.stop()
   }
 
