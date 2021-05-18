@@ -8,9 +8,9 @@ export const Header: FC = () => {
     <>
       <header id="header">
         <h1 className="site-title">
-          <a href="index.html">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </h1>
         <nav>
           <ul>
