@@ -1,13 +1,13 @@
 import React, { FC } from 'react'
-import mv2 from '../img/mv2.jpg'
+import mv4 from '../img/mv4.jpg'
 import { Link } from 'react-router-dom'
 
-export const Playlist: FC = () => {
+export const TwentyThree: FC = () => {
   return (
     <>
       <main>
         <div className="mv">
-          <img src={mv2} alt="メインビジュアル2" />
+          <img src={mv4} alt="メインビジュアル4" />
         </div>
 
         <nav>
@@ -16,14 +16,17 @@ export const Playlist: FC = () => {
               <Link to="/">Top {'>'}</Link>
             </li>
             <li>
-              <Link to="/Playlist">Playlist</Link>
+              <Link to="/Lyrics">Lyrics {'>'}</Link>
+            </li>
+
+            <li>
+              <Link to="/TwentyThree">Twenty-Three</Link>
             </li>
           </ol>
         </nav>
 
-        <section id="about" className="wrapper">
-          <h2 className="section-title">Playlist</h2>
-          <div className="content"></div>
+        <section id="songs" className="wrapper">
+          <h2 className="section-title">Lyrics</h2>
         </section>
       </main>
     </>
