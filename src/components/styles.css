@@ -120,7 +120,6 @@ Top
   font-weight: 100;
 }
 
-
 /*-------------------------------------------
 Serch
 -------------------------------------------*/
@@ -332,4 +331,23 @@ Lyrics
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/*-------------------------------------------
+MusicKit
+-------------------------------------------*/
+.music-btn {
+  font-size: 25px;
+  margin: 1px;
+}
+
+.music-table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.music-item {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.44);
 }
