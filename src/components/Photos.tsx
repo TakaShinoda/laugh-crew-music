@@ -37,51 +37,51 @@ export const Photos: FC = () => {
           <ul>
             <li>
               <a href={iu4} data-lightbox="group">
-                <img src={iu4} width="300" alt="IUの写真4" />
+                <img src={iu4} width="300" alt="IUの写真4" loading="lazy"/>
               </a>
             </li>
             <li>
               <a href={iu5} data-lightbox="group">
-                <img src={iu5} width="300" alt="IUの写真5" />
+                <img src={iu5} width="300" alt="IUの写真5" loading="lazy"/>
               </a>
             </li>
             <li>
               <a href={iu9} data-lightbox="group">
-                <img src={iu9} width="300" alt="IUの写真9" />
+                <img src={iu9} width="300" alt="IUの写真9" loading="lazy"/>
               </a>
             </li>
           </ul>
           <ul>
             <li>
               <a href={iu7} data-lightbox="group">
-                <img src={iu7} width="300" alt="IUの写真7" />
+                <img src={iu7} width="300" alt="IUの写真7" loading="lazy"/>
               </a>
             </li>
             <li>
               <a href={iu8} data-lightbox="group">
-                <img src={iu8} width="300" alt="IUの写真8" />
+                <img src={iu8} width="300" alt="IUの写真8" loading="lazy"/>
               </a>
             </li>
             <li>
               <a href={iu6} data-lightbox="group">
-                <img src={iu6} width="300" alt="IUの写真6" />
+                <img src={iu6} width="300" alt="IUの写真6" loading="lazy"/>
               </a>
             </li>
           </ul>
           <ul>
             <li>
               <a href={iu10} data-lightbox="group">
-                <img src={iu10} width="300" alt="IUの写真10" />
+                <img src={iu10} width="300" alt="IUの写真10" loading="lazy"/>
               </a>
             </li>
             <li>
               <a href={iu11} data-lightbox="group">
-                <img src={iu11} width="300" alt="IUの写真11" />
+                <img src={iu11} width="300" alt="IUの写真11" loading="lazy"/>
               </a>
             </li>
             <li>
               <a href={iu13} data-lightbox="group">
-                <img src={iu13} width="300" alt="IUの写真13" />
+                <img src={iu13} width="300" alt="IUの写真13" loading="lazy"/>
               </a>
             </li>
           </ul>
