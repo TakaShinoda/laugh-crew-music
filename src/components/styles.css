@@ -17,8 +17,8 @@ li {
   list-style: none;
 }
 
-ul{
- padding-left: 0;
+ul {
+  padding-left: 0;
 }
 
 .site-title {
@@ -44,26 +44,23 @@ ul{
   text-align: center;
   max-width: 960px;
   margin: 0 auto 100px auto;
-} 
-
+}
 
 /*-------------------------------------------
 パンくず
 -------------------------------------------*/
 
-.breadcrumbs li{
+.breadcrumbs li {
   content: '/';
   display: inline-block;
-  padding: 0 5px; 
+  padding: 0 5px;
 }
 
-  @media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .breadcrumbs {
-  padding:0 20px;
+    padding: 0 20px;
   }
-  }
-
-
+}
 
 /*-------------------------------------------
 MV
@@ -109,19 +106,35 @@ header
 }
 
 /*-------------------------------------------
+Top
+-------------------------------------------*/
+.l-title {
+  font-size: 3.2rem;
+}
+
+.m-title {
+  font-size: 2.6rem;
+}
+
+.b-title {
+  font-weight: 100;
+}
+
+
+/*-------------------------------------------
 Serch
 -------------------------------------------*/
-#about img{
+#about img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-right: 30px;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
-#serch .content{
+#serch .content {
   justify-content: center;
-  display:flex;
+  display: flex;
 }
 
 .text {
@@ -129,57 +142,55 @@ Serch
   line-height: 1.8;
 }
 
-
 /*-------------------------------------------
 Songs
 -------------------------------------------*/
-#songs ul{
-  display:flex;
+#songs ul {
+  display: flex;
   justify-content: space-between;
 }
 
-#songs li{
+#songs li {
   width: 25%;
 }
 
 /*-------------------------------------------
 Artist
 -------------------------------------------*/
-#artist ul{
-  display:flex;
+#artist ul {
+  display: flex;
   justify-content: space-between;
 }
 
-#artist li{
+#artist li {
   width: 30%;
 }
 
 .sns-icon {
-margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
-.icon{
+.icon {
   width: 20%;
-  padding-right:10px;
+  padding-right: 10px;
 }
 
-.icon2{
+.icon2 {
   width: 20%;
-  padding-bottom:5px;
-  padding-left:10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
 }
-
 
 /*-------------------------------------------
 Photos
 -------------------------------------------*/
 
-#photos ul{
-  display:flex;
+#photos ul {
+  display: flex;
   justify-content: space-between;
 }
 
-#photos li{
+#photos li {
   width: 32%;
 }
 
@@ -204,7 +215,7 @@ button
 
 .custom-btn {
   padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   background: transparent;
   outline: none !important;
@@ -222,7 +233,7 @@ button
 .btn-1:before,
 .btn-1:after {
   position: absolute;
-  content: "";
+  content: '';
   right: 0;
   top: 0;
   background: #000;
@@ -247,13 +258,13 @@ button
 }
 
 a {
-  color:#000;
+  color: #000;
 }
 
 /*-------------------------------------------
 serch button
 -------------------------------------------*/
-.search_container{
+.search_container {
   margin-top: 60px;
   margin-bottom: 40px;
   position: relative;
@@ -264,17 +275,17 @@ serch button
   height: 2.5em;
   width: 300px;
   overflow: hidden;
-  background: #DDDDDD;
+  background: #dddddd;
 }
-.search_container input[type="text"]{
+.search_container input[type='text'] {
   border: none;
-  height: 2.0em;
-  background: #DDDDDD;
+  height: 2em;
+  background: #dddddd;
 }
-.search_container input[type="text"]:focus {
+.search_container input[type='text']:focus {
   outline: 0;
 }
-.search_container input[type="submit"]{
+.search_container input[type='submit'] {
   cursor: pointer;
   font-family: FontAwesome;
   font-size: 1.8em;
@@ -285,12 +296,11 @@ serch button
   height: 2.5em;
   right: 8px;
   top: -14px;
-  outline : none;
+  outline: none;
 }
 .search_container ::-webkit-input-placeholder {
   color: #555555;
 }
-
 
 /*-------------------------------------------
 Lyrics
@@ -298,7 +308,7 @@ Lyrics
 
 .box {
   display: flex;
-  padding:70px;
+  padding: 70px;
 }
 .box .img {
   margin: 0 20px 0 0;
@@ -310,16 +320,16 @@ Lyrics
   margin: 0 0 0 20px;
 }
 
-.text-box{
-  width:calc(100% - 320px);
+.text-box {
+  width: calc(100% - 320px);
 }
 
 /* unrelated css */
 
 .lyrics-img {
-  width:300px;
-  height:200px;
+  width: 300px;
+  height: 200px;
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
 }
