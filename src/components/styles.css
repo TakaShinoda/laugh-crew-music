@@ -25,6 +25,10 @@ ul {
   width: 50px;
   text-align: left;
 }
+.site-logo {
+  padding-top: 10px;
+}
+
 .site-title a {
   display: block;
 }

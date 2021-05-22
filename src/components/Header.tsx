@@ -9,7 +9,7 @@ export const Header: FC = () => {
       <header id="header">
         <h1 className="site-title">
           <Link to="/">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="site-logo" />
           </Link>
         </h1>
         <nav>
