@@ -8,7 +8,7 @@ const server = protect(
   '/',
   (username, password) => safeCompare(username, USER_NAME) && safeCompare(password, PASSWORD), // timing attack 対策
   {
-    directory: `${__dirname}/public`, // public 配下のファイルを静的コンテンツとして配信する
+    directory: `${__dirname}/build`, // build 配下のファイルを静的コンテンツとして配信する
     onAuthFailed: (res) => {
       res.end('Authentication failed')
     },
