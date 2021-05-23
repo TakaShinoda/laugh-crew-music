@@ -4,7 +4,7 @@ const auth = require('./auth')
 
 const app = express()
 const port = process.env.PORT || 3000
-const publicPath = path.join(__dirname, '..', 'laugh-crew-music/build')
+const publicPath = path.join(__dirname, '..', 'build')
 
 app.all('*', (req, res, next) => {
   if (req.headers['x-forwarded-proto'] && req.headers['x-forwarded-proto'] !== 'https') {
