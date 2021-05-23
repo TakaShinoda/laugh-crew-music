@@ -5,7 +5,7 @@ module.exports = (request, response, next) => {
 
   if (user) {
     const usename = 'admin'
-    const password = 'admin'
+    const password = '0516'
 
     if (user.name === usename && user.pass === password) {
       return next()
