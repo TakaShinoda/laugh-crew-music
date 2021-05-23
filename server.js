@@ -1,25 +1,17 @@
-const express = require('express')
-const path = require('path')
-const auth = require('./auth')
+const protect = require('static-auth');
+const safeCompare = require('safe-compare');
 
-const app = express()
-const port = process.env.PORT || 3000
-const publicPath = path.join(__dirname, '..', 'build')
-
-app.all('*', (req, res, next) => {
-  if (req.headers['x-forwarded-proto'] && req.headers['x-forwarded-proto'] !== 'https') {
-    res.redirect('https://' + req.headers.host + req.url)
-  } else {
-    next()
+const server = protect(
+  '/',
+  (username, password) =>
+    safeCompare(username, process.env.USERNAME || 'admin') &&
+    safeCompare(password, process.env.PASSWORD || 'admin'),
+  {
+    directory: `${__dirname}/build`,
+    onAuthFailed: (res) => {
+      res.end('Authentication failed');
+    },
   }
-})
+);
 
-app.use(auth)
-app.use(express.static(publicPath))
-app.get('*', (req, res) => {
-  res.sendFile(path.join(publicPath, 'index.html'))
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`)
-})
+module.exports = server;
