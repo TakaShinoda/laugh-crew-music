@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import mv5 from '../img/mv5.jpg'
 import { Link } from 'react-router-dom'
 import iu4 from '../img/iu4.jpg'
@@ -12,6 +12,15 @@ import iu11 from '../img/iu11.jpg'
 import iu13 from '../img/iu13.jpg'
 
 export const Photos: FC = () => {
+  useEffect(() => {
+    getData()
+  }, [])
+
+  const getData = async() =>{
+    const response = await fetch('https://www.instagram.com/dlwlrma/?__a=1')
+    const data: any = await response.json()
+    console.log(data)
+  }
   return (
     <>
       <main>
