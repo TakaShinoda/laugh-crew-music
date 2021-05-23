@@ -11,7 +11,6 @@ import iu10 from '../img/iu10.jpg'
 import iu11 from '../img/iu11.jpg'
 import iu13 from '../img/iu13.jpg'
 
-
 export const Photos: FC = () => {
   return (
     <>
@@ -26,7 +25,6 @@ export const Photos: FC = () => {
               <Link to="/">Top {'>'}</Link>
             </li>
             <li>
-              <a href="photos.html">Photos</a>
               <Link to="/Photos">Photos</Link>
             </li>
           </ol>
@@ -37,51 +35,51 @@ export const Photos: FC = () => {
           <ul>
             <li>
               <a href={iu4} data-lightbox="group">
-                <img src={iu4} width="300" alt="IUの写真4" loading="lazy"/>
+                <img src={iu4} width="300" alt="IUの写真4" loading="lazy" />
               </a>
             </li>
             <li>
               <a href={iu5} data-lightbox="group">
-                <img src={iu5} width="300" alt="IUの写真5" loading="lazy"/>
+                <img src={iu5} width="300" alt="IUの写真5" loading="lazy" />
               </a>
             </li>
             <li>
               <a href={iu9} data-lightbox="group">
-                <img src={iu9} width="300" alt="IUの写真9" loading="lazy"/>
+                <img src={iu9} width="300" alt="IUの写真9" loading="lazy" />
               </a>
             </li>
           </ul>
           <ul>
             <li>
               <a href={iu7} data-lightbox="group">
-                <img src={iu7} width="300" alt="IUの写真7" loading="lazy"/>
+                <img src={iu7} width="300" alt="IUの写真7" loading="lazy" />
               </a>
             </li>
             <li>
               <a href={iu8} data-lightbox="group">
-                <img src={iu8} width="300" alt="IUの写真8" loading="lazy"/>
+                <img src={iu8} width="300" alt="IUの写真8" loading="lazy" />
               </a>
             </li>
             <li>
               <a href={iu6} data-lightbox="group">
-                <img src={iu6} width="300" alt="IUの写真6" loading="lazy"/>
+                <img src={iu6} width="300" alt="IUの写真6" loading="lazy" />
               </a>
             </li>
           </ul>
           <ul>
             <li>
               <a href={iu10} data-lightbox="group">
-                <img src={iu10} width="300" alt="IUの写真10" loading="lazy"/>
+                <img src={iu10} width="300" alt="IUの写真10" loading="lazy" />
               </a>
             </li>
             <li>
               <a href={iu11} data-lightbox="group">
-                <img src={iu11} width="300" alt="IUの写真11" loading="lazy"/>
+                <img src={iu11} width="300" alt="IUの写真11" loading="lazy" />
               </a>
             </li>
             <li>
               <a href={iu13} data-lightbox="group">
-                <img src={iu13} width="300" alt="IUの写真13" loading="lazy"/>
+                <img src={iu13} width="300" alt="IUの写真13" loading="lazy" />
               </a>
             </li>
           </ul>
