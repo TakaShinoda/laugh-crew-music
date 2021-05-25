@@ -14,6 +14,7 @@ import { Eight } from './components/Eight'
 import { Thevisitor } from './components/Thevisitor'
 import { Celebrity } from './components/Celebrity'
 import { Palette } from './components/Palette'
+import { NotFound } from './components/NotFound'
 
 
 export const App = () => {
@@ -26,6 +27,7 @@ export const App = () => {
           <Route path="/Artist" component={Artist} />
           <Route path="/Lyrics" component={Lyrics} />
           <Route path="/Photos" component={Photos} />
+          <Route component={NotFound} />
 
           <Route path="/Dearname" component={Dearname} />
           <Route path="/TwentyThree" component={TwentyThree} />
