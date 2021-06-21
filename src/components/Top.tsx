@@ -1,5 +1,5 @@
 import React, { FC, useState, useEffect } from 'react'
-import mv1 from '../img/mv1.jpg'
+import mv01 from '../img/mv01.jpg'
 import lilac from '../img/lilac.jpg'
 import ontheground from '../img/ontheground.jpg'
 import whatdoicallyou from '../img/whatdoicallyou.jpg'
@@ -124,7 +124,7 @@ export const Top: FC = () => {
     <>
       <main>
         <div className="mv">
-          <img src={mv1} alt="メインビジュアル" />
+          <img src={mv01} alt="メインビジュアル" />
         </div>
       </main>
       <section id="serch" className="wrapper">

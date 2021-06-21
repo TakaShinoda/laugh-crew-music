@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import mv2 from '../img/mv2.jpg'
+import mv02 from '../img/mv02.jpg'
 import { Link } from 'react-router-dom'
 
 export const Playlist: FC = () => {
@@ -7,7 +7,7 @@ export const Playlist: FC = () => {
     <>
       <main>
         <div className="mv">
-          <img src={mv2} alt="メインビジュアル2" />
+          <img src={mv02} alt="メインビジュアル2" />
         </div>
 
         <nav>

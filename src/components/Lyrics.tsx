@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import mv4 from '../img/mv4.jpg'
+import mv04 from '../img/mv04.jpg'
 import { Link } from 'react-router-dom'
 import dearname from '../img/dearname.jpg'
 import twentyThree from '../img/twenty-three.jpg'
@@ -13,7 +13,7 @@ export const Lyrics: FC = () => {
     <>
       <main>
         <div className="mv">
-          <img src={mv4} alt="メインビジュアル4" />
+          <img src={mv04} alt="メインビジュアル4" />
         </div>
 
         <nav>

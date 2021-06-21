@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import mv3 from '../img/mv3.jpg'
+import mv03 from '../img/mv03.jpg'
 import { Link } from 'react-router-dom'
 import iu from '../img/iu.jpg'
 import dean from '../img/dean.jpg'
@@ -16,7 +16,7 @@ export const Artist: FC = () => {
   return (
     <main>
       <div className="mv">
-        <img src={mv3} alt="メインビジュアル3" />
+        <img src={mv03} alt="メインビジュアル3" />
       </div>
 
       <nav>

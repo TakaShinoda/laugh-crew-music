@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import mv5 from '../img/mv5.jpg'
+import mv05 from '../img/mv05.jpg'
 import { Link } from 'react-router-dom'
 import iu4 from '../img/iu4.jpg'
 import iu5 from '../img/iu5.jpg'
@@ -17,7 +17,7 @@ export const Photos: FC = () => {
     <>
       <main>
         <div className="mv">
-          <img src={mv5} alt="メインビジュアル5" />
+          <img src={mv05} alt="メインビジュアル5" />
         </div>
 
         <nav>
