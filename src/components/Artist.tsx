@@ -8,7 +8,6 @@ import zico from '../img/zico.jpg'
 import chungha from '../img/chungha.jpg'
 import tencm from '../img/10cm.jpg'
 
-
 import youtube_icon from '../img/youtube_icon.jpg'
 import insta_icon from '../img/instaicon.png'
 
