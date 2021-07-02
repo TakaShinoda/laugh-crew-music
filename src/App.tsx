@@ -14,7 +14,7 @@ import { Eight } from './components/Eight'
 import { Thevisitor } from './components/Thevisitor'
 import { Celebrity } from './components/Celebrity'
 import { Palette } from './components/Palette'
-import { NotFound } from './components/NotFound'
+// import { NotFound } from './components/NotFound'
 
 
 export const App = () => {
