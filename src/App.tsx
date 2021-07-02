@@ -27,7 +27,7 @@ export const App = () => {
           <Route path="/Artist" component={Artist} />
           <Route path="/Lyrics" component={Lyrics} />
           <Route path="/Photos" component={Photos} />
-          <Route component={NotFound} />
+          {/* <Route component={NotFound} /> */}
 
           <Route path="/Dearname" component={Dearname} />
           <Route path="/TwentyThree" component={TwentyThree} />
